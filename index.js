@@ -257,13 +257,13 @@ async function starts() {
 				case 'menu':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					client.sendMessage(from, help(prefix), text)
 					break
 					case 'listmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, listmenu(prefix), text, { quoted: mek })
 					break
 					case 'snk':
@@ -274,43 +274,43 @@ async function starts() {
 					case 'kerangmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, kerangmenu(prefix), text, { quoted: mek })
 					break
 					case 'adminmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, adminmenu(prefix), text, { quoted: mek })
 					break
 					case 'ownermenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, ownermenu(prefix), text, { quoted: mek })
 					break
 					case 'nsfwmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, nsfwmenu(prefix), text, { quoted: mek })
 					break
 					case 'animemenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, animemenu(prefix), text, { quoted: mek })
 					break
 					case 'mediamenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, mediamenu(prefix), text, { quoted: mek })
 					break
 					case 'othermenu':
 					if (isBanned) return reply(mess.only.benned)   
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, othermenu(prefix), text, { quoted: mek })
 					break
 					case 'darkgroup':
@@ -321,13 +321,13 @@ async function starts() {
 					case 'funmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, funmenu(prefix), text, { quoted: mek })
 					break
 					case 'makermenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, makermenu(prefix), text, { quoted: mek })
 					break
 					case 'sticker':
@@ -498,7 +498,7 @@ async function starts() {
 					case 'kodenuklir':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isNsfw) return reply('Fitur Nsfw Belum Dihidupkan Ketik /nsfw1 jika ingin mematikan ketik /nsfw 0')
 					tod = await getBuffer(`https://i.ibb.co/Y8SQbH4/images-2021-01-06-T012645-090.jpg`)
@@ -507,7 +507,7 @@ async function starts() {
 					case 'kodenuklir2':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isNsfw) return reply('Fitur Nsfw Belum Dihidupkan Ketik /nsfw1 jika ingin mematikan ketik /nsfw 0')
 					tod = await getBuffer(`https://i.ibb.co/qm1qjdD/images-2020-12-28-T142307-987.jpg`)
@@ -547,7 +547,7 @@ async function starts() {
 					case 'nekopoi':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, nekopoi(prefix) , text, { quoted: mek })
 					break
 					case 'cekvip':
@@ -894,7 +894,7 @@ async function starts() {
 					case 'vipmenu':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply('Anda bukan Member Premium, silakan hubungi owner atau ketik *#daftarvip* untuk membeli akses Premium!' ,text, { quoted: mek })
 					client.sendMessage(from, vipmenu(prefix) , text, { quoted: mek })
 					break
@@ -906,14 +906,14 @@ async function starts() {
 					case 'animesaran':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					qute = await getBuffer(`https://i.ibb.co/F7y89KS/images-2021-01-06-T011202-662.jpg`)
 					client.sendMessage(from, qute, image, { quoted: mek, caption: animesaran() })
 					break
 					case 'listsurah':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, listsurah(prefix) , text, { quoted: mek })
 					break
 					case 'tnc':
@@ -924,13 +924,13 @@ async function starts() {
 					case 'listzodiak':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					client.sendMessage(from, listzodiak(prefix) , text, { quoted: mek })
 					break
 					case 'zodiak':
 					if (isBanned) return reply(mess.only.benned)    
 					if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 	if (args.length === 0) {
 	client.sendMessage(from, listzodiak(), text)
 	} else if (args.includes('aries')) {
@@ -979,7 +979,7 @@ async function starts() {
 				case 'info':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					me = client.user
 					uptime = process.uptime()
 					teks = `*Nama bot* : ${me.name}\n*Author* : *DANDI SAPUTRA*\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Public:* ON\n*Total User Premium*: ${premium.length}\n*Total Chat* : ${totalchat.length}\n*Instagram* : *Dandi_Saputra*\n*Github* : **github.com/gapfinderindonesia\n*Youtube* : *GAP FINDER INDONESIA*`
@@ -1011,7 +1011,7 @@ async function starts() {
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 				if (isBanned) return reply(mess.only.benned)    
-				if (!isPublic) return reply(mess.only.public)
+				
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await client.downloadAndSaveMediaMessage(encmedia)
@@ -1160,7 +1160,7 @@ async function starts() {
                  case 'fitnah':
                  if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                 if (!isPublic) return reply(mess.only.public)
+                 
 				if (!isPremium) return reply(mess.only.premium)
 				if (args.length < 1) return reply(`Usage :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|hai|hai juga`)
 				var gh = body.slice(8)
@@ -1176,7 +1176,7 @@ async function starts() {
 				case 'infogc':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				client.updatePresence(from, Presence.composing)
 				if (!isGroup) return reply(mess.only.group)
 					try {
@@ -1206,7 +1206,7 @@ async function starts() {
                 case 'tomp3':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                 if (!isPremium) return reply(mess.only.premium)
                 	client.updatePresence(from, Presence.composing) 
 					if (!isQuotedVideo) return reply('❌ reply videonya um ❌')
@@ -1226,7 +1226,7 @@ async function starts() {
 					client.updatePresence(from, Presence.composing)  
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					teks = 'This is list of chat number :\n'
 					for (let all of totalchat) {
 						teks += `~> @${all}\n`
@@ -1248,7 +1248,7 @@ async function starts() {
 				case 'testime':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					setTimeout( () => {
 					client.sendMessage(from, '100', text) // ur cods
 					client.sendMessage(from, '50', text) // ur cods
@@ -1293,7 +1293,7 @@ async function starts() {
 				case 'linkgc':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				    if (!isGroup) return reply(mess.only.group)
 				    if (!isBotGroupAdmins) return reply(mess.only.Badmin)
 				    linkgc = await client.groupInviteCode (from)
@@ -1312,7 +1312,7 @@ async function starts() {
 				case 'hidetag':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isPremium) return reply(mess.only.premium)
 					var value = body.slice(9)
@@ -1332,7 +1332,7 @@ async function starts() {
 			case 'randomnekonime':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                     anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/nekonime`).json()
                     if (nekonime.result.endsWith('.png')) {
                     var ext = '.png'
@@ -1344,7 +1344,7 @@ async function starts() {
 				case 'block':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				 client.updatePresence(from, Presence.composing) 
 				 client.chatRead (from)
 					if (!isGroup) return reply(mess.only.group)
@@ -1406,7 +1406,7 @@ async function starts() {
                     case 'unblock':
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                    if (!isPublic) return reply(mess.only.public)
+                    
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 				    client.blockUser (`${body.slice(9)}@c.us`, "remove")
@@ -1425,7 +1425,7 @@ async function starts() {
                 case 'quotemaker':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					var ghh = body.slice(12)
 					var quote = ghh.split("|")[0];
 					var wm = ghh.split("|")[1];
@@ -1440,7 +1440,7 @@ async function starts() {
 				case 'galaxtext':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('mau apa om')
 					teks = body.slice(11)
 					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
@@ -1466,7 +1466,7 @@ async function starts() {
 					case 'jsholat':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (args.length < 1) return reply('Masukan nama daerah!!')
 					sholat = body.slice(9)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${sholat}&apikey=BotWeA`, {method: 'get'})
@@ -1478,7 +1478,7 @@ async function starts() {
 					case 'runtime':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 				client.updatePresence(from, Presence.composing) 
 				uptime = process.uptime()
 				reply(`Bot Telah Aktif Selama\n*${kyun(uptime)}*`)
@@ -1486,7 +1486,7 @@ async function starts() {
 					case 'covid':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
                    client.updatePresence(from, Presence.composing) 
                    data = await fetchJson(`https://arugaz.herokuapp.com/api/corona?country=${body.slice(7)}`)
                    if (data.result) reply(data.result)
@@ -1496,7 +1496,7 @@ async function starts() {
                 case 'pronlogo':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					var gh = body.slice(10)
 					var gbl1 = gh.split("|")[0];
 					var gbl2 = gh.split("|")[1];
@@ -1509,7 +1509,7 @@ async function starts() {
 					case 'logo':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (!isPremium) return reply(mess.only.premi)
 					if (args.length < 1) return reply('Teksnya mana kak? >.<')
 					teks = body.slice(6)
@@ -1520,7 +1520,7 @@ async function starts() {
 				case 'primbonjodoh':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					var gh5 = body.slice(14)
 					var gbl11 = gh5.split("|")[0];
 					var gbl21 = gh5.split("|")[1];
@@ -1530,7 +1530,7 @@ async function starts() {
 				case 'ramaljadian':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					var gh7 = body.slice(10)
 					var gbl16 = gh7.split("|")[0];
 					var gbl26 = gh7.split("|")[1];
@@ -1541,7 +1541,7 @@ async function starts() {
                 case 'tahta':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (!isPremium) return reply(mess.only.premi)
 					if (args.length < 1) return reply('Teksnya mana kak? >.<')
 					teks = body.slice(7)
@@ -1612,7 +1612,7 @@ async function starts() {
 				case 'snow':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					var ghn = body.slice(6)
 					var gbl7w = ghn.split("|")[0];
 					var gbl8w = ghn.split("|")[1];
@@ -1655,13 +1655,13 @@ async function starts() {
 				case 'quran':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					anu = await fetchJson(`https://api.banghasan.com/quran/format/json/acak`, {method: 'get'})
 					quran = `${anu.acak.ar.teks}\n\n${anu.acak.id.teks}\nQ.S ${anu.surat.nama} ayat ${anu.acak.id.ayat}`
 					client.sendMessage(from, quran, text, {quoted: mek})
 					break
 				case 'marvelogo':
-				if (!isPublic) return reply(mess.only.public)
+				
 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					var dgh = body.slice(10)
@@ -1676,7 +1676,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'lovemake':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Teksnya mana um')
 					love = body.slice(10)
 					if (love.length > 12) return reply('Teksnya kepanjangan, maksimal 9 karakter')
@@ -1687,7 +1687,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'goldbutton':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					gol = body.slice(12)
 					if (args.length < 1) return reply('Teksnya mana um')
 					reply(mess.wait)
@@ -1698,7 +1698,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'silverbutton':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					gol2 = body.slice(14)
 					if (args.length < 1) return reply('Teksnya mana um')
 					reply(mess.wait)
@@ -1730,7 +1730,7 @@ if (isBanned) return reply(mess.only.benned)
                       case 'qrcode':
                       if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                      if (!isPublic) return reply(mess.only.public)
+                      
 					const tex = encodeURIComponent(body.slice(8))
 					if (!tex) return client.sendMessage(from, '𝐌𝐚𝐬𝐮𝐤𝐚𝐧 𝐓𝐞𝐤𝐬/𝐔𝐫𝐥 𝐘𝐚𝐧𝐠 𝐈𝐧𝐠𝐢𝐧 𝐃𝐢 𝐁𝐮𝐚𝐭 𝐐𝐑', text, {quoted: mek})
 					const bufferr = await getBuffer(`https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${tex}`)
@@ -1751,7 +1751,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'ninjalogo':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                       if (args.length < 1) return reply('Teks nya mana?')
                       var geh = body.slice(11)
                       gl1n = geh.split("|")[0];
@@ -1764,7 +1764,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'glitch':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					var jgh = body.slice(8)
 					var tels3 = jgh.split("|")[0];
 					var tels4 = jgh.split("|")[1];
@@ -1868,7 +1868,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'fire':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply(mess.blank)
 					tels = body.slice(7)
 					if (tels.length > 15) return reply('Teksnya kepanjangan, maksimal 20 karakter')
@@ -1880,7 +1880,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'light':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply(mess.blank)
 					telsf = body.slice(7)
 					if (tels.ength > 10) return reply('Teksnya kepanjangan, maksimal 9 karakter')
@@ -1892,7 +1892,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'wolflogo':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                       if (args.length < 1) return reply('Teks nya mana?')
                       gqh = body.slice(9)
                       glq1 = gqh.split("|")[0];
@@ -1905,7 +1905,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'lionlogo':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                       if (args.length < 1) return reply('Teks nya mana?')
                       gwh = body.slice(9)
                       glw1 = gwh.split("|")[0];
@@ -1918,7 +1918,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'leave': 
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				    if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply(mess.only.ownerB)
 			    	anu = await client.groupLeave(from, '𝗕𝘆𝗲𝗲', groupId)
@@ -1926,7 +1926,7 @@ if (isBanned) return reply(mess.only.benned)
 	            case 'getses':
 	if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-	if (!isPublic) return reply(mess.only.public)
+	
                     if (!isOwner) return client.reply(from, 'Perintah ini hanya untuk Owner bot', id)
                     const sesPic = await client.getSnapshot()
                     client.sendFile(from, sesPic, 'session.png', 'Neh...', id)
@@ -1934,7 +1934,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'setname':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
                 if (!isGroup) return reply(mess.only.group)
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1947,7 +1947,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'setdesc':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                 if (!isGroup) return reply(mess.only.group)
 			    if (!isGroupAdmins) return reply(mess.only.admin)
 				if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1959,7 +1959,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'tts':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana om?', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
 					if (args.length < 2) return client.sendMessage(from, 'Textnya mana om', text, {quoted: mek})
@@ -1981,7 +1981,7 @@ if (isBanned) return reply(mess.only.benned)
 	            case 'setpp':
 	if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-	if (!isPublic) return reply(mess.only.public)
+	
                     if (!isGroup) return reply(mess.only.group)
                     if (!isGroupAdmins) return reply(mess.only.admin)
                     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -1996,7 +1996,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'apakah':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					apakah = body.slice(1)
 					const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi']
 					const kah = apa[Math.floor(Math.random() * apa.length)]
@@ -2006,7 +2006,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'nilai':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					rate = body.slice(1)
 					const ra =['0','4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const te = ra[Math.floor(Math.random() * ra.length)]
@@ -2015,7 +2015,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'gantengcek':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					ganteng = body.slice(1)
 					const gan =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
 					const teng = gan[Math.floor(Math.random() * gan.length)]
@@ -2024,7 +2024,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'cantikcek':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					cantik = body.slice(1)
 					const can =['10','30','20','40','50','60','70','62','74','83','97','100','29','94','75','82','41','39']
 					const tik = can[Math.floor(Math.random() * can.length)]
@@ -2033,7 +2033,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'watak':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					watak = body.slice(1)
 					const wa =['peny ayang','pem urah','Pem arah','Pem aaf','Pen urut','Ba ik','bap eran','Baik Hati','peny abar','Uw u','top deh, poko knya','Suka Memb antu']
 					const tak = wa[Math.floor(Math.random() * wa.length)]
@@ -2042,7 +2042,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'hobby':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					hobby = body.slice(1)
 					const hob =['Memasak','Membantu Atok','Mabar','Nobar','Sosmedtan','Membantu Orang lain','Nonton Anime','Nonton Drakor','Naik Motor','Nyanyi','Menari','Bertumbuk','Menggambar','Foto fotoan Ga jelas','Maen Game','Berbicara Sendiri']
 					const by = hob[Math.floor(Math.random() * hob.length)]
@@ -2051,7 +2051,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'bisakah':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					bisakah = body.slice(1)
 					const bisa =['Bisa','Tidak Bisa','Coba Ulangi','MANA GW TAU']
 					const keh = bisa[Math.floor(Math.random() * bisa.length)]
@@ -2060,7 +2060,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'kapankah':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					kapankah = body.slice(1)
 					const kapan =['Besok','Lusa','Tadi','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi']
 					const koh = kapan[Math.floor(Math.random() * kapan.length)]
@@ -2069,7 +2069,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'dadu':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					kapankah = body.slice(1)
 					const elu =['1','2','3','4','5','6']
 					const ule = elu[Math.floor(Math.random() * elu.length)]
@@ -2078,7 +2078,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'toxic':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					kapankah = body.slice(1)
 					const toxic =['anjing','babi lu','anak anjing','udah tolol nub Lagi','muka lo kek monyet','udah jomblo sendirian lagi dirumah tolol','so so an mau punya pacar muka aja kek monyet lepass dari kandang','ganteng doang di toxic aja dibilang baperan','pantek kau','bangsat kau','ku entod kalian nangis kau','memek lu semua','lihat anak anjing lagi baca','ganteng doang jemput cewe dipanggang','kamu cantik beb bullshit anjing cowo buaya','anak dajjal','puki lu','anjing ngajak gelud','sama hantu takut cupu ngentod','cupu cupu aja gausah bacot','kontol lu semua','bocah lu semua kontol','3 Hari Lagi']
 					const ole = toxic[Math.floor(Math.random() * toxic.length)]
@@ -2087,7 +2087,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'truth':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					const trut =['Pernah suka sama siapa aja? berapa lama?','Kalau boleh atau kalau mau, di gc/luar gc siapa yang akan kamu jadikan sahabat?(boleh beda/sma jenis)','apa ketakutan terbesar kamu?','pernah suka sama orang dan merasa orang itu suka sama kamu juga?','Siapa nama mantan pacar teman mu yang pernah kamu sukai diam diam?','pernah gak nyuri uang nyokap atau bokap? Alesanya?','hal yang bikin seneng pas lu lagi sedih apa','pernah cinta bertepuk sebelah tangan? kalo pernah sama siapa? rasanya gimana brou?','pernah jadi selingkuhan orang?','hal yang paling ditakutin','siapa orang yang paling berpengaruh kepada kehidupanmu','hal membanggakan apa yang kamu dapatkan di tahun ini','siapa orang yang bisa membuatmu sange','siapa orang yang pernah buatmu sange','(bgi yg muslim) pernah ga solat seharian?','Siapa yang paling mendekati tipe pasangan idealmu di sini','suka mabar(main bareng)sama siapa?','pernah nolak orang? alasannya kenapa?','Sebutkan kejadian yang bikin kamu sakit hati yang masih di inget','pencapaian yang udah didapet apa aja ditahun ini?','kebiasaan terburuk lo pas di sekolah apa?']
 					const ttrth = trut[Math.floor(Math.random() * trut.length)]
 					truteh = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
@@ -2096,7 +2096,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'dare':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 					const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
@@ -2105,7 +2105,7 @@ if (isBanned) return reply(mess.only.benned)
 case 'kus':
 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					const kus =(`https://xptnbotapinew.herokuapp.com/?dare&apikey=xptn`)
                     const pel = kus[Math.floor(Math.random() * kus.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
@@ -2118,7 +2118,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'ping':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                     const timestamp = speed();
                     const latensi = speed() - timestamp
                     client.updatePresence(from, Presence.composing) 
@@ -2128,7 +2128,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'tagme':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					var nom = mek.participant
 					const tag = {
 					text: `@${nom.split("@s.whatsapp.net")[0]} tagged!`,
@@ -2145,7 +2145,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'ttp':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (args.length < 1) return reply('Textnya mana um?')
 					ranpl = getRandom('.png')
 					ranol = getRandom('.webp')
@@ -2163,7 +2163,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'lirik':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					teks = body.slice(7)
 					anu = await fetchJson(`http://scrap.terhambar.com/lirik?word=${teks}`, {method: 'get'})
 					reply('Lirik dari lagu '+teks+' adalah :\n\n'+anu.result.lirik)
@@ -2216,7 +2216,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'meme': 
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					meme = await kagApi.memes()
 					bufferk = await getBuffer(`https://imgur.com/${meme.hash}.jpg`)
 					client.sendMessage(from, bufferk, image, {quoted: mek, caption: '.......'})
@@ -2224,7 +2224,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'memeindo': 
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					memein = await kagApi.memeindo()
 					bufferll = await getBuffer(`https://imgur.com/${memein.hash}.jpg`)
 					client.sendMessage(from, bufferll, image, {quoted: mek, caption: '.......'})
@@ -2232,7 +2232,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ssweb':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Urlnya mana om')
 					tekss = body.slice(7)
 					reply(mess.wait)
@@ -2243,7 +2243,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'walpaperhd':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('teks nya mana om')
 					teksj = body.slice(7)
 					reply(mess.wait)
@@ -2255,7 +2255,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=BotWeA`, {method: 'get'})
 						bufferc = await getBuffer(res.result)
 						client.sendMessage(from, bufferc, image, {quoted: mek, caption: 'Ingat! Cintai nekonime'})
@@ -2273,7 +2273,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/kiss?apikey=BotWeA`, {method: 'get'})
 						bufferv = await getBuffer(res.result)
 						client.sendMessage(from, bufferv, image, {quoted: mek, caption: 'ezzzz'})
@@ -2288,7 +2288,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/cry?apikey=BotWeA`, {method: 'get'})
 						bufferb = await getBuffer(res.result)
 						client.sendMessage(from, bufferb, image, {quoted: mek, caption: 'ezzzz'})
@@ -2303,7 +2303,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://meme-api.herokuapp.com/gimme/sideoppai`, {method: 'get'})
 						buffern = await getBuffer(res.result)
 						client.sendMessage(from, buffern, image, {quoted: mek, caption: 'ezzzz'})
@@ -2318,7 +2318,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://waifu.pics/api/nsfw/waifu`, {method: 'get'})
 						bufferm = await getBuffer(res.result)
 						client.sendMessage(from, bufferm, image, {quoted: mek, caption: 'ezzzz'})
@@ -2333,7 +2333,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://mnazria.herokuapp.com/api/anime?query=dxd`, {method: 'get'})
 						bufferqq = await getBuffer(res.result)
 						client.sendMessage(from, bufferqq, image, {quoted: mek, caption: 'ezzzz'})
@@ -2348,7 +2348,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isNsfw) return reply('❌ *MODE NSFW BELUM DIAKTIFKAN* ❌')
 						res = await fetchJson(`https://nhder.herokuapp.com/download/nhentai/'+code+'/zip`, {method: 'get'})
 						bufferww = await getBuffer(res.result)
@@ -2365,7 +2365,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu?apikey=BotWeA`, {method: 'get'})
 
@@ -2387,7 +2387,7 @@ if (isBanned) return reply(mess.only.benned)
 					break
 					case 'hug':
 				    try {
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hug?apikey=BotWeA`, {method: 'get'})
 						bufferrr = await getBuffer(res.result)
 						client.sendMessage(from, bufferrr, image, {quoted: mek, caption: 'hug'})
@@ -2400,7 +2400,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://api.vhtear.com/randomloli&apikey=Beli biar work`, {method: 'get'})
 						buffertt = await getBuffer(res.result.result)
 						client.sendMessage(from, buffertt, image, {quoted: mek, caption: 'loli'})
@@ -2415,7 +2415,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomquotes?apikey=BotWeA`, {method: 'get'})
 						bufferyy = await getBuffer(res.result)
 						client.sendMessage(from, bufferyy, image, {quoted: mek, caption: 'hug'})
@@ -2448,7 +2448,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://api.vhtear.com/randomloli&apikey=Beli biar work`, {method: 'get'})
 						buffertt = await getBuffer(res.result.result)
 						client.sendMessage(from, buffertt, image, {quoted: mek, caption: 'loli'})
@@ -2463,7 +2463,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						anu = await fetchJson(`https://api.i-tech.id/anim/baguette?key=oc2nvC-F4HS1e-OteAXu-5QkGag-J8WC94`, {method: 'get'})
 						bufferii = await getBuffer(anu.result.result)
 						client.sendMessage(from, bufferii, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
@@ -2476,7 +2476,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						anu = await fetchJson(`https://meme-api.herokuapp.com/gimme/sideoppai`, {method: 'get'})
 						bufferoo = await getBuffer(anu.result.result)
 						client.sendMessage(from, bufferoo, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
@@ -2489,7 +2489,7 @@ if (isBanned) return reply(mess.only.benned)
 					break
 					case 'jd':
 				    try {
-					if (!isPublic) return reply(mess.only.public)
+					
 						anu = await fetchJson(`https://waifu.pics/api/nsfw/waifu`, {method: 'get'})
 						bufferpp = await getBuffer(anu.result.result)
 						client.sendMessage(from, bufferpp, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
@@ -2504,7 +2504,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu?apikey=BotWeA`, {method: 'get'})
 						bufferaa = await getBuffer(res.image)
 						client.sendMessage(from, bufferaa, image, {quoted: mek, caption: 'Ingat! Cintai waifu!'})
@@ -2516,7 +2516,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'waifu2':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/waifu?apikey=BotWeA`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -2527,7 +2527,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'imoji':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					reply(mess.wait)
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/emoji2png?emoji=`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -2537,7 +2537,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'wibu':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/randomwibu&apikey=Beli biar work`)
 					if (anu.error) return reply(anu.error)
@@ -2548,7 +2548,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'hunti':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					reply(mess.wait)
 					anu = await fetchJson(`https://api.vhtear.com/nhentaipdfdownload?query=287167&apikey=Beli biar work`)
 					if (anu.error) return reply(anu.error)
@@ -2591,7 +2591,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
 						bufferzz = await getBuffer(res.result)
@@ -2605,7 +2605,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=BotWeA`, {method: 'get'})
@@ -2620,7 +2620,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://api.lolis.life/random?nsfw=true`, {method: 'get'})
@@ -2635,7 +2635,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=BotWeA`, {method: 'get'})
@@ -2650,7 +2650,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwneko?apikey=BotWeA`, {method: 'get'})
@@ -2665,7 +2665,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://nekos.life/api/v2/img/boobs`, {method: 'get'})
@@ -2680,7 +2680,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=BotWeA`, {method: 'get'})
@@ -2695,7 +2695,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://st4rz.herokuapp.com/api/1cak`, {method: 'get'})
@@ -2710,7 +2710,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isPremium) return reply(mess.only.premium)
 						if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
@@ -2725,7 +2725,7 @@ if (isBanned) return reply(mess.only.benned)
 				    try {
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 						if (!isNsfw) return reply('❌ *FALSE* ❌')
 						res = await fetchJson(`http://inyourdream.herokuapp.com/graffity?kata=' + graffity`, {method: 'get'})
 						bufferrrr = await getBuffer(res.result)
@@ -2751,7 +2751,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'hilih':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Teksnya mana um?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/hilih?teks=${body.slice(7)}`, {method: 'get'})
 					reply(anu.result)
@@ -2759,7 +2759,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ytmp3':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (!isPremium) return reply(mess.only.premium)
                 reply(mess.wait)
 					if (args.length < 1) return reply('Urlnya mana um?')
@@ -2775,7 +2775,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'bucin':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					gatauda = body.slice(7)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
 					reply(anu.desc)
@@ -2783,7 +2783,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'apkmod':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					gatauda = body.slice(7)
 					anu = await fetchJson(`https://rfilesss109.000webhostapp.com/mod.php?apikey=xptn1`, {method: 'get'})
 					reply(anu.result)
@@ -2791,7 +2791,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'akugay':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					gatauda = body.slice(7)
 					anu = await fetchJson(`https://xptnbotapinew.herokuapp.com/?dare&apikey=xptn`, {method: 'get'})
 					reply(anu.desc)
@@ -2811,7 +2811,7 @@ if (isBanned) return reply(mess.only.benned)
 		        case 'gay':
 		if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-		if (!isPublic) return reply(mess.only.public)
+		
 		if (args.length < 1) return reply('tag temanmu!')
 					rate = body.slice(1)
 					const ti =['4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
@@ -2822,7 +2822,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'cerpen':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					gatauda = body.slice(1)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/cerpen`, {method: 'get'})
 					reply(anu.result)
@@ -2830,7 +2830,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'cersex':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					gatauda = body.slice(1)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/cersex2`)
 					reply(anu.result)
@@ -2856,13 +2856,13 @@ if (isBanned) return reply(mess.only.benned)
                 client.sendMessage(hasil, image, mek, '\`\`\`DARKJOKES\`\`\`')
 				break
 					case 'kata':
-					if (!isPublic) return reply(mess.only.public)
+					
 					gatauda = body.slice(8)
 					anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/quotesnime/random`, {method: 'get'})
 					reply(anu.quotes)
 					break		
 					case 'pantun':
-					if (!isPublic) return reply(mess.only.public)
+					
 					gatauda = body.slice(8)
 					anu = await fetchJson(`https://api-zeks.harispoppy.com/api/pantun`, {method: 'get'})
 					reply(anu.quotes)
@@ -2870,7 +2870,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'jokerlogo':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (args.length < 1) return reply('𝐭𝐞𝐤𝐬𝐧𝐲𝐚 𝐤𝐚𝐤')
 					jhf = body.slice(10)
 					reply(mess.wait)
@@ -2881,7 +2881,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'ranime':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					gatauda = body.slice(8)
 					reply(mess.wait)
 					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
@@ -2919,7 +2919,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'neko':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					gatauda = body.slice(6)
 					reply(mess.wait)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/nekonime`, {method: 'get'})
@@ -2930,7 +2930,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'cerpen':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					gatauda = body.slice(1)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/cerpen`, {method: 'get'})
 					reply(anu.result)
@@ -2938,7 +2938,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'chord':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('teks nya mana om')
 					tels = body.slice(7)
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/chord?q=${tels}`, {method: 'get'})
@@ -2947,7 +2947,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ramalhp':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('teks nya mana om')
 					kj = body.slice(12)
 					anu = await fetchJson(`https://api.vhtear.com/nomerhoki?no=${kj}&apikey=Beli biar work`)
@@ -2956,14 +2956,14 @@ if (isBanned) return reply(mess.only.benned)
 				case 'textscreen':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('teks nya mana om')
 					telsjk = body.slice(9)
 					anu = await fetchJson(`https://api.vhtear.com/textscreen?query=${telsjk}&apikey=Beli biar work`, {method: 'get'})
 					reply(anu.result.text)
 					break
 			    case 'joox':
-			if (!isPublic) return reply(mess.only.public)
+			
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
                 if (!isPremium) return reply(mess.only.premium)
@@ -2979,7 +2979,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'slap':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                 kapankah = body.slice(1)
 
 					const slap =['anjing','babi lu','anak anjing','udah tolol nub Lagi','muka lo kek monyet','udah jomblo sendirian lagi dirumah tolol','so so an mau punya pacar muka aja kek monyet lepass dari kandang','ganteng doang di toxic aja dibilang baperan','pantek kau','bangsat kau','ku entod kalian nangis kau','memek lu semua','lihat anak anjing lagi baca','ganteng doang jemput cewe dipanggang','kamu cantik beb bullshit anjing cowo buaya','anak dajjal','puki lu','anjing ngajak gelud','sama hantu takut cupu ngentod','cupu cupu aja gausah bacot','kontol lu semua','bocah lu semua kontol','3 Hari Lagi']
@@ -2994,7 +2994,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'beritahoax':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					client.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infohoax`, {method: 'get'})
 					teks = '=================\n'
@@ -3006,7 +3006,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'wiki':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
                     if (args.length < 1) return reply('teks nya mana om?')
                     teks = body.slice(5)
                     reply(mess.wait)
@@ -3019,7 +3019,7 @@ if (isBanned) return reply(mess.only.benned)
                case 'infogempa':
                if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-               if (!isPublic) return reply(mess.only.public)
+               
                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/infogempa?apikey=BotWeA`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
                    bufferggg = await getBuffer(anu.map)
@@ -3030,7 +3030,7 @@ if (isBanned) return reply(mess.only.benned)
                                     try {
                                     	if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                                    	if (!isPublic) return reply(mess.only.public)
+                                    	
                                                 if (!isNsfw) return reply('❌ *NSFW MATI* ❌')
                                                 res = await fetchJson(`https://tobz-api.herokuapp.com/api/hentai?apikey=BotWeA`, {method: 'get'})
                                                 bufferhhh = await getBuffer(res.result)
@@ -3043,7 +3043,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'infogithub':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                    teks = body.slice(5)
                    anu = await fetchJson(`http://api-melodicxt.herokuapp.com/api/githubprofile?user=${teks}&apikey=administrator)`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
@@ -3054,14 +3054,14 @@ if (isBanned) return reply(mess.only.benned)
                 case 'infocuaca':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                    anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/cuaca?q=${body.slice(6)}&apiKey=pJ6xKSMPCT8QMcvBzGFY`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
                    hasil = ` *Tempat : ${anu.data.result.tempat}\nCuaca : ${anu.data.result.cuaca}\nAngin : ${anu.data.result.angin}\nSuhu : ${anu.data.result.suhu}\nKelembapan : ${anu.data.result.kelembapan}`
                    client.sendMessage(from, hasil, text, {quoted: mek})
                    break
                 case 'tebakgambar':
-                if (!isPublic) return reply(mess.only.public)
+                
 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					anu = await fetchJson(`https://api.vhtear.com/tebakgambar&apikey=Beli biar work`, {method: 'get'})
@@ -3085,7 +3085,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'caklontong':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					anu = await fetchJson(`https://api.vhtear.com/funkuis&apikey=Beli biar work`, {method: 'get'})
 					setTimeout( () => {
 					client.sendMessage(from, '*➸ Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
@@ -3106,7 +3106,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'family100':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					anu = await fetchJson(`https://api.vhtear.com/family100&apikey=Beli biar work`, {method: 'get'})
 					setTimeout( () => {
 					client.sendMessage(from, '*➸ Jawaban :* '+anu.result.jawaban, text, {quoted: mek}) // ur cods
@@ -3125,7 +3125,7 @@ if (isBanned) return reply(mess.only.benned)
 					}, 0) // 1000 = 1s,
 					break
 				case 'game':
-				if (!isPublic) return reply(mess.only.public)
+				
 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					anu = await fetchJson(`http://rt-files.000webhostapp.com/tts.php?apikey=rasitech`, {method: 'get'})
@@ -3148,7 +3148,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'brainly':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (args.length < 1) return reply('Apa yang mau dicari um?')
 					anu = await fetchJson(`https://api.vhtear.com/branly?query=${body.slice(9)}&apikey=Beli biar work`, {method: 'get'})
 					reply(anu.result.data)
@@ -3156,7 +3156,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'image':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (args.length < 1) return reply('Apa yang mau dicari kak?')
 					goo = body.slice(7)
 					anu = await fetchJson(`https://api.vhtear.com/googleimg?query=${goo}&apikey=Beli biar work`, {method: 'get'})
@@ -3216,7 +3216,7 @@ if (isBanned) return reply(mess.only.benned)
 					client.sendMessage(from, pok, image, { quoted: mek })
 					break
 				case 'inu':
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					anu = await fetchJson(`https://scrap.terhambar.com/pin?url=https://id.pinterest.com/pin/588916088754108677/`, {method: 'get'})
@@ -3226,7 +3226,7 @@ if (isBanned) return reply(mess.only.benned)
 					client.sendMessage(from, nye, image, { caption: 'Inu!!', quoted: mek })
 					break
 				case 'elang':
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=elang&apikey=Beli biar work`, {method: 'get'})
@@ -3496,7 +3496,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'anjing':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					anu = await fetchJson(`https://api.fdci.se/rep.php?gambar=anjing`, {method: 'get'})
 					reply(mess.wait)
 					var n = JSON.parse(JSON.stringify(anu));
@@ -3507,7 +3507,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'pinterest':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (args.length < 1) return reply(mess.search)
 					pinte = body.slice(11)
 					anu = await fetchJson(`https://api.vhtear.com/pinterest?query=${pin}&apikey=Beli biar work`, {method: 'get'})
@@ -3520,7 +3520,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'xd':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (args.length < 1) return reply(mess.wait)
 					pinte = body.slice(11)
 					anu = await fetchJson(`https://api-zeks.harispoppy.com/api/pin?q=${pin}&apikey=APIKEY`, {method: 'get'})
@@ -3533,7 +3533,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'resepmasakan':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                    anu = await fetchJson(`https://mnazria.herokuapp.com/api/resep?key=${body.slice(6)}`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
                    buffer1 = await getBuffer(anu.thumb_item)
@@ -3543,7 +3543,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'indohot':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
                 if (!isPremium) return reply(mess.only.premium)
                    anu = await fetchJson(`https://arugaz.herokuapp.com/api/indohot`, {method: 'get'})
                    if (anu.error) return reply(anu.error)
@@ -3553,7 +3553,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ytmp4':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (!isPremium) return reply(mess.only.premium)
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply(mess.error.Iv)
@@ -3575,7 +3575,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ban':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isOwner) return reply(mess.only.ownerB)
 					client.banUser (`${body.slice(7)}@c.us`, "add")
 					client.sendMessage(from, `anda terkena banned ${body.slice(7)}@c.us`, text)
@@ -3583,7 +3583,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'ytsearch':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Yang mau di cari apaan? titit?')
 					anu = await fetchJson(`https://mhankbarbars.herokuapp.com/api/ytsearch?q=${body.slice(10)}&apiKey=${apiKey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
@@ -3596,7 +3596,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'tiktok':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Urlnya mana um?')
 					if (!isUrl(args[0]) && !args[0].includes('tiktok.com')) return reply(mess.error.Iv)
 					reply(mess.wait)
@@ -3609,7 +3609,7 @@ if (isBanned) return reply(mess.only.benned)
 					try {
 						if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-						if (!isPublic) return reply(mess.only.public)
+						
 						if (args.length < 1) return client.sendMessage(from, 'Usernamenya mana um?', text, {quoted: mek})
 						let { user, stats } = await tiktod.getUserProfileInfo(args[0])
 						reply(mess.wait)
@@ -3625,7 +3625,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'tulis':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Yang mau di tulis apaan?')
 					tulis = body.slice(6)
 					reply(mess.wait)
@@ -3635,7 +3635,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'text3d':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
               	    if (args.length < 1) return reply('teksnya mana kak?')
                     teks = `${body.slice(8)}`
                     if (teks.length > 10) return client.sendMessage(from, 'Teksnya kepanjangan, Maksimal 10 kalimat', text, {quoted: mek})
@@ -3654,7 +3654,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'shorturl':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                     anu = await fetchJson(`https://tobz-api.herokuapp.com/api/shorturl?url=${body.slice(10)}&apikey=BotWeA`)
 			        hasil = `${anu.result}`
 			        reply(hasil)
@@ -3662,7 +3662,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'infonotlp':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                     anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/infonomor?no=${body.slice(10)}`)
 			        hasil = `*nomor* \n${anu.nomor} *international* \n${anu.international}`
 			        reply(hasil)
@@ -3681,7 +3681,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'igstalk':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (args.length < 1) return reply('Masukan username mu!!')
 					ige = body.slice(9)
 					reply(mess.wait)
@@ -3694,7 +3694,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'tesss':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('mau apa om')
 					teks = body.slice(7)
 					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
@@ -3704,7 +3704,7 @@ if (isBanned) return reply(mess.only.benned)
 					client.sendMessage(from, buffer8, image, {quoted: mek})
 					break
 				case 'tep':
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('mau apa om')
 					teks = body.slice(9)
 					if (teks.length > 8) return reply('Teksnya kepanjangan, maksimal 8 karakter')
@@ -3748,7 +3748,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'cekjodoh':                    
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                     anu = await fetchJson(`https://arugaz.herokuapp.com/api/jodohku?nama=${quote}&text2=${wm}${body.slice(8)}`)
 			        hasil = `Nama : ${anu.nama}\nPasangan : ${anu.pasangan}\n\nPositif : ${anu.positif}\nNegatif : ${anu.negatif}`
 			        client.sendMessage(from, anu, text, {quoted: mek, caption: hasil})
@@ -3756,7 +3756,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'fototiktok':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                     gatauda = body.slice(8)
                     anu = await fetchJson(`https://docs-jojo.herokuapp.com/api/tiktokpp?user=${body.slice(8)}`)
 			        buffer22 = await getBuffer(anu.result)
@@ -3765,7 +3765,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'map':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
                 anu = await fetchJson(`https://mnazria.herokuapp.com/api/maps?search=${body.slice(5)}`, {method: 'get'})
                 buffer33 = await getBuffer(anu.gambar)
                 client.sendMessage(from, buffer33, image, {quoted: mek, caption: `${body.slice(5)}`})
@@ -3773,7 +3773,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'url2img':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					tipelist = ['desktop','tablet','mobile']
 					if (args.length < 1) return reply('Tipenya apa um?')
 					if (!tipelist.includes(args[0])) return reply('Tipe desktop|tablet|mobile')
@@ -3789,7 +3789,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'tsticker':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Textnya mana um?')
 					ranp = getRandom('.png')
 					rano = getRandom('.webp')
@@ -3807,7 +3807,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'otagall2':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (!isPremium) return reply(mess.only.premium)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3823,7 +3823,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'kickall':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Kamu siapa?')
 					members_id = []
@@ -3839,7 +3839,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'otagall3':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 			if (!isPremium) return reply(mess.only.premium)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
@@ -3855,13 +3855,13 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'kbbi':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (args.length < 1) return reply('Apa yang mau dicari um?')
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/kbbi?search=${body.slice(6)}`, {method: 'get'})
 					reply('Menurut Kbbi:\n\n'+anu.result)
 					break
 				case 'persengay':
-				if (!isPublic) return reply(mess.only.public)
+				
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					if (args.length < 1) return reply('Apa yang mau dicari um?')
@@ -3871,7 +3871,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'baper':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/howbucins`, {method: 'get'})
 					reply('Jangan Baper Ya:\n\n'+anu.desc)
 					break
@@ -3881,7 +3881,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'group':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3896,14 +3896,14 @@ if (isBanned) return reply(mess.only.benned)
 				case 'alay':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					anu = await fetchJson(`https://arugaz.herokuapp.com/api/bapakfont?kata=${body.slice(6)}`, {method: 'get'})
 					reply('nianjim\n\n'+anu.result)
 					break
 				case 'artinama':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Apa yang mau dicari um?')
 					anu = await fetchJson(`https://mnazria.herokuapp.com/api/arti?nama=${body.slice(6)}`, {method: 'get'})
 					reply('Menurut nama:\n\n'+anu.result)
@@ -3911,7 +3911,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'tagall':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -3926,7 +3926,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'otagall':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					members_id = []
@@ -3941,7 +3941,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'clearall':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isOwner) return reply('Kamu siapa?')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
@@ -3953,7 +3953,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'bc':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isOwner) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
@@ -3974,7 +3974,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'add':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -3991,7 +3991,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'kick':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4012,7 +4012,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'edotensei':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4035,7 +4035,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'promote':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4056,7 +4056,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'delete':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4077,7 +4077,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'demote':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4098,7 +4098,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'listadmins':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					teks = `List admin of group *${groupMetadata.subject}*\nTotal : ${groupAdmins.length}\n\n`
 					no = 0
@@ -4112,7 +4112,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'stickertoimg':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isQuotedSticker) return reply('❌ reply stickernya njing ❌')
 					reply(mess.wait)
 					encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
@@ -4129,7 +4129,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'simi':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return reply('Textnya mana um?')
 					teks = body.slice(5)
 					anu = await simih(teks) //fetchJson(`http://simsumi.herokuapp.com/api?text=${chat}&lang=id`, {method: 'get'})
@@ -4139,7 +4139,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'simih':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4159,7 +4159,7 @@ if (isBanned) return reply(mess.only.benned)
 			    case 'nsfw':
 			if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-			if (!isPublic) return reply(mess.only.public)
+			
 			if (!isOwner) return reply('Kamu siapa?')
 					if (!isGroup) return reply(mess.only.group)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4179,7 +4179,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'anime':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('Hmmmm')
@@ -4218,7 +4218,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'welcome':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (args.length < 1) return reply('Hmmmm')
@@ -4237,7 +4237,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'clone':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isOwner) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('Tag target yang ingin di clone')
@@ -4256,7 +4256,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'setprefix':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (args.length < 1) return
 					if (!isPremium) return reply(mess.only.premium)
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -4267,7 +4267,7 @@ if (isBanned) return reply(mess.only.benned)
 		        case 'setpp2':
 		if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-		if (!isPublic) return reply(mess.only.public)
+		
                     if (!isGroup) return reply(mess.only.group)
                     if (!isadminbot) return reply('Kamu siapa?')
                     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4278,7 +4278,7 @@ if (isBanned) return reply(mess.only.benned)
                 case 'bc2':
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-                if (!isPublic) return reply(mess.only.public)
+                
 					if (!isadminbot) return reply('Kamu siapa?')
 					if (args.length < 1) return reply('.......')
 					anu = await client.chats.all()
@@ -4299,7 +4299,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'hidetag2':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isPremium) return reply(mess.only.premium)
 					var value = body.slice(9)
@@ -4319,7 +4319,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'hidetag5':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isPremium) return reply(mess.only.premium)
 					var value = body.slice(9)
@@ -4342,7 +4342,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'hidetag20':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isPremium) return reply(mess.only.premium)
 					var value = body.slice(10)
@@ -4379,7 +4379,7 @@ if (isBanned) return reply(mess.only.benned)
 					case 'hidetag50':
 					if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-					if (!isPublic) return reply(mess.only.public)
+					
 					if (!isGroup) return reply(mess.only.group)
 					if (!isPremium) return reply(mess.only.premium)
 					var value = body.slice(10)
@@ -4508,7 +4508,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'setpp3':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
                     if (!isGroup) return reply(mess.only.group)
                     if (!isfrendsowner) return reply('Kamu siapa?')
                     if (!isBotGroupAdmins) return reply(mess.only.Badmin)
@@ -4517,7 +4517,7 @@ if (isBanned) return reply(mess.only.benned)
                     reply('Sukses mengganti icon Grup')
                     break
                 case 'bc3':
-                if (!isPublic) return reply(mess.only.public)
+                
                 if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					if (!isfrendsowner) return reply('Kamu siapa?')
@@ -4540,7 +4540,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'hidetag3':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if (!isGroup) return reply(mess.only.group)
 					if (!isfrendsowner) return reply('Kamu siapa?')
 					var value = body.slice(9)
@@ -4569,7 +4569,7 @@ if (isBanned) return reply(mess.only.benned)
 				case 'wait':
 				if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
-				if (!isPublic) return reply(mess.only.public)
+				
 					if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
 						reply(mess.wait)
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
